@@ -1,0 +1,26 @@
+# Copie para config.local.toml; nao coloque senhas neste arquivo.
+detector = "yolo"
+model = "yolo11n.pt"
+confidence = 0.45
+device = "cpu"
+image_size = 640
+max_detections = 100
+max_width = 1280
+min_hits = 3
+max_age = 15
+match_distance = 0.12
+
+# Coordenadas entre 0 e 1. Da esquerda para direita: descida = entrada.
+# A ancora e o centro inferior da caixa (proximo aos pes).
+line_start = [0.1, 0.55]
+line_end = [0.9, 0.55]
+deadband = 0.015
+stable_frames = 3
+cooldown_frames = 15
+max_crossing_gap = 3
+initial_occupancy = 0
+max_reconnects = 3
+reconnect_delay = 1.0
+network_timeout_ms = 5000
+snapshot_interval = 30
+camera_label = "entrada-principal"
